@@ -16,54 +16,7 @@ from sklearn.metrics import PrecisionRecallDisplay
 # Set page config to make it more personalized and dark theme
 st.set_page_config(page_title="Mushroom Classification", page_icon="🍄", layout="wide")
 
-# Apply dark theme styles using CSS
-st.markdown("""
-    <style>
-    /* Change background color for the page */
-    body {
-        background-color: #121212;
-        color: #f1f1f1;
-    }
 
-    /* Dark sidebar background */
-    .css-1d391kg {
-        background-color: #2E3B4E;
-        color: white;
-    }
-
-    /* Dark buttons */
-    .stButton>button {
-        background-color: #2C3E50;
-        color: white;
-        border-radius: 5px;
-        font-size: 16px;
-    }
-
-    .stButton>button:hover {
-        background-color: #34495E;
-    }
-
-    /* Dark input fields */
-    .stTextInput input {
-        background-color: #333333;
-        color: #f1f1f1;
-    }
-
-    .stSelectbox select {
-        background-color: #333333;
-        color: #f1f1f1;
-    }
-
-    /* Dark theme for charts and plots */
-    .stPlotlyChart div {
-        background-color: #121212;
-    }
-    
-    h1, h2, h3 {
-        color: #f1f1f1;
-    }
-    </style>
-""", unsafe_allow_html=True)
 def main():
   st.title("Binary classification app")
 if __name__ == "__main__":
